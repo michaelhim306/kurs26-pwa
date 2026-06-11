@@ -1,1 +1,17 @@
+{
+  "name": "Euro - Dollar",
+  "short_name": "Euro - Dollar",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/index.html"
 
+  "icons": [
+    {
+    "src": "icons/dollar512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+    }
+  ]
+}
