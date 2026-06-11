@@ -34,6 +34,14 @@ maximum-scale=1.0, user-scalable=no" />
 </head>
   
 <script>
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('./service-worker.js');
+    console.log("Service Worker registered");
+  });
+}
+  
 function dollareuro(){
 var kurs = 0.89;
 document.getElementById('ausgabe').innerHTML= kurs * document.myformular.dollar.value;
