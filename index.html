@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html>
+<style>
+#ausgabe{
+font-size: 1.2em;
+height: 30px;
+padding:10px;
+}
+</style>
+<script>
+function dollareuro(){
+var kurs = 0.89;
+document.getElementById('ausgabe').innerHTML= kurs * document.myformular.dollar.value;
+}
+</script>
+<body>
 
+<h2>Berechne den entspechenden Eurowert</h2>
+
+<form name="myformular">
+<input type="text" name="dollar" />
+<button type="button" onclick="dollareuro()" >Umrechnen</button>
+</form>
+
+<div id="ausgabe"></div>
+</body>
+
+</html>
